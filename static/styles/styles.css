@@ -1,79 +1,71 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 body {
-    font-family: Comic Sans MS;
-    padding: 2px;
-  }
-  
-  /* Header/Blog Title */
-  .header {
-    padding: 5px;
-    background: black;
-    color:white;
-  }
-  
-  /* Footer */
-  .footer {
-    text-align: center;
-    background: black;
-    color:white;
-    
-  }
+	background: #ca915b;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+	line-height: 1.6;
+}
 
-    
-  
-  
-  .responsive {
-    width: auto ;
-    max-width: 100% ;
-    height: auto ;
-  }
+.container {
+	max-width: 650px;
+	margin: 1rem auto;
+	overflow: auto;
+	padding: 0 2rem;
+}
 
-      
-  
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {
-      width: 100%;
-      padding: 0;
-    }
-  
-  
-  }
-  
-  
-  
-  .menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  .mitem {
-    float: left;
-    text-align:center
-  }
-  
-  .mitem a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 20px 30px;
-    text-decoration: none;
-  }
-  
-  .mitem a:hover:not(.active) {
-    background-color: #111;
-  }
-  
-  .active {
-    background-color: #4CAF50;
-  }
-  
-  .logo{
-    width: 55px ;
-    height: 55px ;
-    border-radius: 50%;
-    margin-right: 15px;
-    margin-top: 2px;
-  }
+h1 {
+	color: #777;
+	margin-top: 15px;
+}
+
+h3 {
+	margin-bottom: 10px;
+}
+
+img {
+	width: 100%;
+}
+
+.message {
+	text-align: center;
+	padding: 5px;
+	border: #ccc dotted 2px;
+	margin-top: 2rem;
+}
+
+.logo {
+	width: 300px;
+	display: block;
+	margin: auto;
+}
+
+.form-group {
+	margin: 1rem 0;
+}
+
+input[type='text'],
+select,
+textarea {
+	display: block;
+	width: 100%;
+	padding: 0.4rem;
+	font-size: 1.2rem;
+	border: 1px solid #ccc;
+}
+
+.btn {
+	display: block;
+	width: 100%;
+	background: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	margin-top: 1rem;
+}
